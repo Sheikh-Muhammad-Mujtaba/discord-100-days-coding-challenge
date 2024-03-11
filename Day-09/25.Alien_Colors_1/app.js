@@ -1,5 +1,4 @@
-"use strict";
-let alien_color = "green";
+var alien_color = "green";
 // Check if the alien color is green
 if (alien_color == "green") {
     console.log("You just earned 5 points!"); // Display a message if the condition is true
