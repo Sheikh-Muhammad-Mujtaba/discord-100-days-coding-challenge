@@ -1,5 +1,5 @@
 // Define an array of numbers
-let numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let numbers: number[] =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
 // Iterate through each number in the array
 numbers.forEach(number => {
@@ -18,3 +18,5 @@ numbers.forEach(number => {
     // Print the number along with its suffix
     console.log(`${number}${suffix}`);
 });
+
+
