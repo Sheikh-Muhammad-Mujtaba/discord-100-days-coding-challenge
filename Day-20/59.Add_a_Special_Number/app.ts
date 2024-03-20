@@ -10,6 +10,9 @@ function makeAdder(valueToAdd: number): (number) => number {
 }
 
 // Making a magic box that adds 10
-let addFive = makeAdder(10);
-console.log(addFive(20)); // If we put 20 in the box, it gives us 30
+let addTen = makeAdder(10);
+
+// Using the magic box to add 10 to 20
+console.log(addTen(20)); // If we put 20 in the box, it gives us 30
+
 // We made a function (magic box) that adds 10 to any number.

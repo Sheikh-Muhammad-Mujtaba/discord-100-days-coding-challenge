@@ -5,7 +5,9 @@ var userProfile = (function () {
     var age = 30;
     // This part of the code defines a method that displays the user's information.
     return {
+        // The method is called 'displayInfo' and is a function that, when called, logs the user's name and age.
         displayInfo: function () {
+            // The user's name and age are logged using template literals, which allow us to interpolate variables into a string.
             console.log("Name: ".concat(name, ", Age: ").concat(age));
         }
     };
