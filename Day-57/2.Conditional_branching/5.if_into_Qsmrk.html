@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Rewrite 'if else' into '?' </title>
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            /* Preserve line breaks */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rewrite 'if else' into '?'</h1>
+    <pre>
+        let login = 'Employee';
+        let message;
+    
+        if (login === 'Employee') {
+          message = 'Hello';
+        } else if (login === 'Director') {
+          message = 'Greetings';
+        } else if (login === '') {
+          message = 'No login';
+        } else {
+          message = '';
+        }
+
+        <h3 style="font-size: larger;">Result</h3>
+        let login = Employee ;
+        let message = (login === 'Employee') ? 'Hello':
+             (login === 'Director') ? 'Greetings':
+             (login === '') ? 'No login':
+             'no login registred';
+
+
+      </pre>
+    <script>
+        let Employee = prompt('What is your role', '')
+        let login = Employee;
+        let message = (login === 'Employee') ? 'Hello' :
+            (login === 'Director') ? 'Greetings' :
+                (login === '') ? 'No login' :
+                    'no login registred';
+
+        alert(message)
+
+    </script>
+</body>
+
+</html>

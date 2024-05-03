@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Prompt</title>
+</head>
+<body>
+  <script>
+    // Ask for a login with prompt
+    let login = prompt("Enter your login:");
+
+    // Check if the login is "Admin"
+    if (login === "Admin") {
+      // If login is "Admin", prompt for a password
+      let password = prompt("Enter your password:");
+
+      // Check if the password is an empty string or canceled input
+      if (!password) {
+        alert("Canceled");
+      } else if (password === "TheMaster") {
+        // Check if the password is "TheMaster"
+        alert("Welcome!");
+      } else {
+        // If the password is not "TheMaster", show "Wrong password"
+        alert("Wrong password");
+      }
+    } else if (!login) {
+      // Check if login is an empty string or canceled input
+      alert("Canceled");
+    } else {
+      // If login is not "Admin", show "I don't know you"
+      alert("I don't know you");
+    }
+  </script>
+</body>
+</html>

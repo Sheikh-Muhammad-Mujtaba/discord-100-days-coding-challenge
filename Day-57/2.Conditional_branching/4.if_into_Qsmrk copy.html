@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Rewrite 'if' into '?' </title>
+    <style>
+        pre {
+          background-color: #f4f4f4;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-family: 'Courier New', Courier, monospace;
+          white-space: pre-wrap; /* Preserve line breaks */
+        }
+      </style>
+</head>
+
+<body>
+    <h1>Rewrite 'if' into '?'</h1>
+<pre>
+    let result;
+    if (a + b < 4) {
+      result = 'Below';
+    } else 
+      result = 'Over';
+    <h3>Result</h3>
+    let result = (a + b < 4) ? 'Below' : 'Over';
+</pre>
+    <script>
+        let a = prompt('a?', '');
+        let b = prompt('b?', '');
+
+        let result = (a + b < 4) ? 'Below' : 'Over';
+
+        alert(result)
+    </script>
+</body>
+
+</html>
